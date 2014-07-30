@@ -69,6 +69,7 @@ public class Analyzer {
 				System.out.println("\t" + f.name + " : " + LCS.longestSubstr(unitData.name.toLowerCase(), f.name.toLowerCase()));
 			}
 		}
+		WurstGenerator.generateWurst(cleanDatas);
 		//		for (UnitData unitData : datas) {
 		//			if(unitData.race != null && unitData.race.contains("creeps") &&
 		//				unitData.targType != null && unitData.targType.contains("ground")

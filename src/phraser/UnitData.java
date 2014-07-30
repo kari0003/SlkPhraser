@@ -65,9 +65,10 @@ public class UnitData {
 		StringBuilder sb = new StringBuilder();
 		String wname = name.replace(" ", "_");
 		for (UnitData fam : familiars) {
-			sb.append("\t\t"+wname+".familiars.add("+ fam.name.replace(" ", "_") +")\n");
+			sb.append("\t"+wname+".familiars.add("+ fam.name.replace(" ", "_") +")\n");
 		}
-		sb.append("\t\t\n");
+		if(! familiars.isEmpty())
+			sb.append("\t\n");
 		return sb.toString();
 	}
 	

@@ -1,0 +1,825 @@
+package StdUnitData
+import LinkedList
+import UnitObjEditing
+import MapStuff
+//Some families are created. I just realized that saving model strings is not enough,
+//Their unit definitions/ID-s need to be in the class too. But this will be added in advance.
+//Stringwrap serves the single prupose to make you able to put strings in a linkedlist
+package UnitData
+
+class UnitData
+	int uid
+	LList<UnitData> familiars = new LList<UnitData>()
+	
+	construct(int id)
+		uid = id
+		
+
+
+
+public function init_ModelPaths(bool compTime)
+	int bandit_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 bandit_id = id
+			if compTime
+				let def = new UnitDefinition(id , nban)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var bandit = new UnitData(bandit_id)
+
+	int brigand_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 brigand_id = id
+			if compTime
+				let def = new UnitDefinition(id , nbrg)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var brigand = new UnitData(brigand_id)
+
+	int bandit_lord_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 bandit_lord_id = id
+			if compTime
+				let def = new UnitDefinition(id , nbld)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var bandit_lord = new UnitData(bandit_lord_id)
+
+	int Centaur_outrunner_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 Centaur_outrunner_id = id
+			if compTime
+				let def = new UnitDefinition(id , ncen)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var Centaur_outrunner = new UnitData(Centaur_outrunner_id)
+
+	int centaur_sorceror_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 centaur_sorceror_id = id
+			if compTime
+				let def = new UnitDefinition(id , ncks)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var centaur_sorceror = new UnitData(centaur_sorceror_id)
+
+	int corrupted_ent_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 corrupted_ent_id = id
+			if compTime
+				let def = new UnitDefinition(id , nenc)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var corrupted_ent = new UnitData(corrupted_ent_id)
+
+	int Furbolg_Ancient_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 Furbolg_Ancient_id = id
+			if compTime
+				let def = new UnitDefinition(id , nfra)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var Furbolg_Ancient = new UnitData(Furbolg_Ancient_id)
+
+	int Furbolg_Tracker_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 Furbolg_Tracker_id = id
+			if compTime
+				let def = new UnitDefinition(id , nfrb)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var Furbolg_Tracker = new UnitData(Furbolg_Tracker_id)
+
+	int Furbolg_Champion_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 Furbolg_Champion_id = id
+			if compTime
+				let def = new UnitDefinition(id , nfrg)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var Furbolg_Champion = new UnitData(Furbolg_Champion_id)
+
+	int Furbolg_Panda_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 Furbolg_Panda_id = id
+			if compTime
+				let def = new UnitDefinition(id , nfrp)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var Furbolg_Panda = new UnitData(Furbolg_Panda_id)
+
+	int granite_golem_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 granite_golem_id = id
+			if compTime
+				let def = new UnitDefinition(id , nggr)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var granite_golem = new UnitData(granite_golem_id)
+
+	int goblin_shredder_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 goblin_shredder_id = id
+			if compTime
+				let def = new UnitDefinition(id , ngir)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var goblin_shredder = new UnitData(goblin_shredder_id)
+
+	int gnoll_brute_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 gnoll_brute_id = id
+			if compTime
+				let def = new UnitDefinition(id , ngnb)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var gnoll_brute = new UnitData(gnoll_brute_id)
+
+	int Gnoll_Assassin_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 Gnoll_Assassin_id = id
+			if compTime
+				let def = new UnitDefinition(id , ngns)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var Gnoll_Assassin = new UnitData(Gnoll_Assassin_id)
+
+	int gnoll_king_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 gnoll_king_id = id
+			if compTime
+				let def = new UnitDefinition(id , ngnv)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var gnoll_king = new UnitData(gnoll_king_id)
+
+	int GoblinSapper_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 GoblinSapper_id = id
+			if compTime
+				let def = new UnitDefinition(id , ngsp)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var GoblinSapper = new UnitData(GoblinSapper_id)
+
+	int battle_golem_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 battle_golem_id = id
+			if compTime
+				let def = new UnitDefinition(id , narg)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var battle_golem = new UnitData(battle_golem_id)
+
+	int Kobold_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 Kobold_id = id
+			if compTime
+				let def = new UnitDefinition(id , nkob)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var Kobold = new UnitData(Kobold_id)
+
+	int Kobold_Geomancer_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 Kobold_Geomancer_id = id
+			if compTime
+				let def = new UnitDefinition(id , nkog)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var Kobold_Geomancer = new UnitData(Kobold_Geomancer_id)
+
+	int lightning_lizard_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 lightning_lizard_id = id
+			if compTime
+				let def = new UnitDefinition(id , nltl)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var lightning_lizard = new UnitData(lightning_lizard_id)
+
+	int murloc_plaguebearer_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 murloc_plaguebearer_id = id
+			if compTime
+				let def = new UnitDefinition(id , nmpg)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var murloc_plaguebearer = new UnitData(murloc_plaguebearer_id)
+
+	int murloc_flesheater_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 murloc_flesheater_id = id
+			if compTime
+				let def = new UnitDefinition(id , nmfs)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var murloc_flesheater = new UnitData(murloc_flesheater_id)
+
+	int murloc_fisherman_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 murloc_fisherman_id = id
+			if compTime
+				let def = new UnitDefinition(id , nmrl)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var murloc_fisherman = new UnitData(murloc_fisherman_id)
+
+	int murloc_nightcrawler_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 murloc_nightcrawler_id = id
+			if compTime
+				let def = new UnitDefinition(id , nmrm)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var murloc_nightcrawler = new UnitData(murloc_nightcrawler_id)
+
+	int murloc_huntsman_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 murloc_huntsman_id = id
+			if compTime
+				let def = new UnitDefinition(id , nmrr)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var murloc_huntsman = new UnitData(murloc_huntsman_id)
+
+	int nerubian_warrior_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 nerubian_warrior_id = id
+			if compTime
+				let def = new UnitDefinition(id , nnwa)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var nerubian_warrior = new UnitData(nerubian_warrior_id)
+
+	int nerubian_webspinner_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 nerubian_webspinner_id = id
+			if compTime
+				let def = new UnitDefinition(id , nnwl)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var nerubian_webspinner = new UnitData(nerubian_webspinner_id)
+
+	int nerubian_seer_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 nerubian_seer_id = id
+			if compTime
+				let def = new UnitDefinition(id , nnwr)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var nerubian_seer = new UnitData(nerubian_seer_id)
+
+	int ogre_lord_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 ogre_lord_id = id
+			if compTime
+				let def = new UnitDefinition(id , nogl)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var ogre_lord = new UnitData(ogre_lord_id)
+
+	int ogre_mauler_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 ogre_mauler_id = id
+			if compTime
+				let def = new UnitDefinition(id , nogm)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var ogre_mauler = new UnitData(ogre_mauler_id)
+
+	int ogre_magi_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 ogre_magi_id = id
+			if compTime
+				let def = new UnitDefinition(id , nomg)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var ogre_magi = new UnitData(ogre_magi_id)
+
+	int owlbear_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 owlbear_id = id
+			if compTime
+				let def = new UnitDefinition(id , nowb)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var owlbear = new UnitData(owlbear_id)
+
+	int razormane_brute_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 razormane_brute_id = id
+			if compTime
+				let def = new UnitDefinition(id , nrzb)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var razormane_brute = new UnitData(razormane_brute_id)
+
+	int razormane_chieftain_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 razormane_chieftain_id = id
+			if compTime
+				let def = new UnitDefinition(id , nrzg)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var razormane_chieftain = new UnitData(razormane_chieftain_id)
+
+	int quillboar_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 quillboar_id = id
+			if compTime
+				let def = new UnitDefinition(id , nrzt)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var quillboar = new UnitData(quillboar_id)
+
+	int Satyr_Trickster_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 Satyr_Trickster_id = id
+			if compTime
+				let def = new UnitDefinition(id , nsat)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var Satyr_Trickster = new UnitData(Satyr_Trickster_id)
+
+	int SkeletonWarrior_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 SkeletonWarrior_id = id
+			if compTime
+				let def = new UnitDefinition(id , nske)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var SkeletonWarrior = new UnitData(SkeletonWarrior_id)
+
+	int sludge_minion_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 sludge_minion_id = id
+			if compTime
+				let def = new UnitDefinition(id , nslm)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var sludge_minion = new UnitData(sludge_minion_id)
+
+	int salamander_hatchling_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 salamander_hatchling_id = id
+			if compTime
+				let def = new UnitDefinition(id , nslh)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var salamander_hatchling = new UnitData(salamander_hatchling_id)
+
+	int salamander_vizier_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 salamander_vizier_id = id
+			if compTime
+				let def = new UnitDefinition(id , nslv)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var salamander_vizier = new UnitData(salamander_vizier_id)
+
+	int black_spider_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 black_spider_id = id
+			if compTime
+				let def = new UnitDefinition(id , nspb)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var black_spider = new UnitData(black_spider_id)
+
+	int green_spider_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 green_spider_id = id
+			if compTime
+				let def = new UnitDefinition(id , nspg)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var green_spider = new UnitData(green_spider_id)
+
+	int spider_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 spider_id = id
+			if compTime
+				let def = new UnitDefinition(id , nspr)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var spider = new UnitData(spider_id)
+
+	int brood_mother_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 brood_mother_id = id
+			if compTime
+				let def = new UnitDefinition(id , nsbm)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var brood_mother = new UnitData(brood_mother_id)
+
+	int sasquatch_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 sasquatch_id = id
+			if compTime
+				let def = new UnitDefinition(id , nsqt)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var sasquatch = new UnitData(sasquatch_id)
+
+	int elder_sasquatch_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 elder_sasquatch_id = id
+			if compTime
+				let def = new UnitDefinition(id , nsqe)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var elder_sasquatch = new UnitData(elder_sasquatch_id)
+
+	int spirit_pig_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 spirit_pig_id = id
+			if compTime
+				let def = new UnitDefinition(id , nspp)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var spirit_pig = new UnitData(spirit_pig_id)
+
+	int Wendigo_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 Wendigo_id = id
+			if compTime
+				let def = new UnitDefinition(id , nwen)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var Wendigo = new UnitData(Wendigo_id)
+
+	int timber_wolf_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 timber_wolf_id = id
+			if compTime
+				let def = new UnitDefinition(id , nwlt)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var timber_wolf = new UnitData(timber_wolf_id)
+
+	int dire_wolf_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 dire_wolf_id = id
+			if compTime
+				let def = new UnitDefinition(id , nwld)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var dire_wolf = new UnitData(dire_wolf_id)
+
+	int white_wolf_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 white_wolf_id = id
+			if compTime
+				let def = new UnitDefinition(id , nwwf)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var white_wolf = new UnitData(white_wolf_id)
+
+	int wendigo_shaman_id
+	for i = 0 to 5
+		for j = 0 to 5
+			id = UNIT_ID_GEN.next()
+			if i == 0 and j == 0
+				 wendigo_shaman_id = id
+			if compTime
+				let def = new UnitDefinition(id , nwns)
+				..setName("Mutant")..setHitPointsMaximumBase(100)
+				..setModelFile(m.path)..setAttack1AttackType(i castTo AttackType)..setArmorType(j castTo ArmorType)
+	var wendigo_shaman = new UnitData(wendigo_shaman_id)
+
+	bandit.familiars.add(bandit_lord)
+	
+
+
+	bandit_lord.familiars.add(bandit)
+	bandit_lord.familiars.add(ogre_lord)
+	
+
+	Centaur_outrunner.familiars.add(centaur_sorceror)
+	
+
+	centaur_sorceror.familiars.add(Centaur_outrunner)
+	
+
+
+	Furbolg_Ancient.familiars.add(Furbolg_Tracker)
+	Furbolg_Ancient.familiars.add(Furbolg_Champion)
+	Furbolg_Ancient.familiars.add(Furbolg_Panda)
+	
+
+	Furbolg_Tracker.familiars.add(Furbolg_Ancient)
+	Furbolg_Tracker.familiars.add(Furbolg_Champion)
+	Furbolg_Tracker.familiars.add(Furbolg_Panda)
+	
+
+	Furbolg_Champion.familiars.add(Furbolg_Ancient)
+	Furbolg_Champion.familiars.add(Furbolg_Tracker)
+	Furbolg_Champion.familiars.add(Furbolg_Panda)
+	
+
+	Furbolg_Panda.familiars.add(Furbolg_Ancient)
+	Furbolg_Panda.familiars.add(Furbolg_Tracker)
+	Furbolg_Panda.familiars.add(Furbolg_Champion)
+	
+
+	granite_golem.familiars.add(battle_golem)
+	
+
+	goblin_shredder.familiars.add(GoblinSapper)
+	
+
+	gnoll_brute.familiars.add(Gnoll_Assassin)
+	gnoll_brute.familiars.add(gnoll_king)
+	gnoll_brute.familiars.add(razormane_brute)
+	
+
+	Gnoll_Assassin.familiars.add(gnoll_brute)
+	Gnoll_Assassin.familiars.add(gnoll_king)
+	
+
+	gnoll_king.familiars.add(gnoll_brute)
+	gnoll_king.familiars.add(Gnoll_Assassin)
+	
+
+	GoblinSapper.familiars.add(goblin_shredder)
+	
+
+	battle_golem.familiars.add(granite_golem)
+	
+
+	Kobold.familiars.add(Kobold_Geomancer)
+	
+
+	Kobold_Geomancer.familiars.add(Kobold)
+	
+
+
+	murloc_plaguebearer.familiars.add(murloc_flesheater)
+	murloc_plaguebearer.familiars.add(murloc_fisherman)
+	murloc_plaguebearer.familiars.add(murloc_nightcrawler)
+	murloc_plaguebearer.familiars.add(murloc_huntsman)
+	
+
+	murloc_flesheater.familiars.add(murloc_plaguebearer)
+	murloc_flesheater.familiars.add(murloc_fisherman)
+	murloc_flesheater.familiars.add(murloc_nightcrawler)
+	murloc_flesheater.familiars.add(murloc_huntsman)
+	
+
+	murloc_fisherman.familiars.add(murloc_plaguebearer)
+	murloc_fisherman.familiars.add(murloc_flesheater)
+	murloc_fisherman.familiars.add(murloc_nightcrawler)
+	murloc_fisherman.familiars.add(murloc_huntsman)
+	
+
+	murloc_nightcrawler.familiars.add(murloc_plaguebearer)
+	murloc_nightcrawler.familiars.add(murloc_flesheater)
+	murloc_nightcrawler.familiars.add(murloc_fisherman)
+	murloc_nightcrawler.familiars.add(murloc_huntsman)
+	
+
+	murloc_huntsman.familiars.add(murloc_plaguebearer)
+	murloc_huntsman.familiars.add(murloc_flesheater)
+	murloc_huntsman.familiars.add(murloc_fisherman)
+	murloc_huntsman.familiars.add(murloc_nightcrawler)
+	
+
+	nerubian_warrior.familiars.add(nerubian_webspinner)
+	nerubian_warrior.familiars.add(nerubian_seer)
+	nerubian_warrior.familiars.add(SkeletonWarrior)
+	
+
+	nerubian_webspinner.familiars.add(nerubian_warrior)
+	nerubian_webspinner.familiars.add(nerubian_seer)
+	
+
+	nerubian_seer.familiars.add(nerubian_warrior)
+	nerubian_seer.familiars.add(nerubian_webspinner)
+	
+
+	ogre_lord.familiars.add(bandit_lord)
+	ogre_lord.familiars.add(ogre_mauler)
+	ogre_lord.familiars.add(ogre_magi)
+	
+
+	ogre_mauler.familiars.add(ogre_lord)
+	ogre_mauler.familiars.add(ogre_magi)
+	
+
+	ogre_magi.familiars.add(ogre_lord)
+	ogre_magi.familiars.add(ogre_mauler)
+	
+
+
+	razormane_brute.familiars.add(gnoll_brute)
+	razormane_brute.familiars.add(razormane_chieftain)
+	
+
+	razormane_chieftain.familiars.add(razormane_brute)
+	
+
+
+
+	SkeletonWarrior.familiars.add(nerubian_warrior)
+	
+
+
+	salamander_hatchling.familiars.add(salamander_vizier)
+	
+
+	salamander_vizier.familiars.add(salamander_hatchling)
+	
+
+	black_spider.familiars.add(green_spider)
+	black_spider.familiars.add(spider)
+	
+
+	green_spider.familiars.add(black_spider)
+	green_spider.familiars.add(spider)
+	
+
+	spider.familiars.add(black_spider)
+	spider.familiars.add(green_spider)
+	
+
+
+	sasquatch.familiars.add(elder_sasquatch)
+	
+
+	elder_sasquatch.familiars.add(sasquatch)
+	
+
+
+	Wendigo.familiars.add(wendigo_shaman)
+	
+
+	timber_wolf.familiars.add(dire_wolf)
+	timber_wolf.familiars.add(white_wolf)
+	
+
+	dire_wolf.familiars.add(timber_wolf)
+	dire_wolf.familiars.add(white_wolf)
+	
+
+	white_wolf.familiars.add(timber_wolf)
+	white_wolf.familiars.add(dire_wolf)
+	
+
+	wendigo_shaman.familiars.add(Wendigo)
+	
+
